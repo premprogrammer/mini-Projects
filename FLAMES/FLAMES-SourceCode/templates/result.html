@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flames</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        body{
+    font-family: monaco;
+    background-image:url("bg.gif");
+
+}
+
+.setters{
+    width: 70%;
+    height: 50%;
+    text-align : left;
+    background-color:maroon;
+    color: ivory;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 3px;
+}
+
+#title{
+    background-color: crimson;
+    color: ivory;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding-top: 1%;
+}
+
+#body{
+    background-color: rgba(255, 255, 255, 0.801);
+    color: rgb(0, 0, 0);
+    margin: 5%;
+    border-radius: 10px;
+    padding-bottom: 1%;
+}
+
+#button{
+    width: 40%;
+    height: 20%;
+    text-align: center;
+    background-color: ivory;
+    border-radius: 20px;
+    margin-top: 5%;
+    border: 2px solid lawngreen;
+    border-width: 3px;
+    transition-duration: 0.3s;
+
+}
+
+#button:hover{
+    width: 40%;
+    height: 20%;
+    text-align: center;
+    background-color: lawngreen;
+    border: 2px solid lawngreen;
+
+    border-radius: 20px;
+    margin-top: 5%;
+
+}
+#result{
+    width: 30%;
+    height: 40%;
+    text-align : left;
+    background-color:rgba(191, 53, 255, 0.849);
+    color: ivory;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#display{
+    width: 70%;
+    text-align : left;
+    color: ivory;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <div id="body">
+    <div id="title">
+        <center><h1 style="font-family: Montez; font-size: 50px;">Flames <span>&#128293;</span></h1></center>
+    </div>
+    <center>
+        <div class="setters" style="font-family: Sofia; font-size: 40px;" id="setters">
+            <center>
+            <h6>{{result}}!</h6>
+                </center><center>
+            <p style="font-size : 16px">{{quote}}!</p></center>
+            <center>
+                <button  id="button" onclick="reload()">Retry</button>
+            </center>
+        </div>
+    </center>
+    <script>
+        function reload(){
+            window.location.href = '/';
+        }
+    </script>
+    <div>
+    </div>
+    </div>
+
+</body>
+</html>
