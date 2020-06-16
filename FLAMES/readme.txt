@@ -1,4 +1,4 @@
-It is specially made to have some fun with names of persons, checking relationship between them as per the rules of FLAMES calculation.
+It is specially made to have some fun with names of people, checking relationship between them as per the rules of FLAMES calculation method.
 F - Friend
 L - Lover
 A - Affectionate
